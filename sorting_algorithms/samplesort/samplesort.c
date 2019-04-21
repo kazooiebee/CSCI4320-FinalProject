@@ -62,7 +62,7 @@ void *samplesort(int *arr, int n, int mpi_rank, int mpi_size, void *serialsort(i
     int *samples = calloc(mpi_size, sizeof(int));
     int *all_samples = NULL;
     int *all_samples_merged = NULL;
-    int *local = calloc(n, sizeof(int));
+    int *local = calloc(k, sizeof(int));
     int *pivots = calloc(mpi_size - 1, sizeof(int));
     int *class_start = calloc(mpi_size, sizeof(int));
     int *class_end = calloc(mpi_size, sizeof(int));
@@ -114,7 +114,6 @@ void *samplesort(int *arr, int n, int mpi_rank, int mpi_size, void *serialsort(i
 
         free(start_idx);
         free(end_idx);
-        free(all_samples);
     }
 
     MPI_Bcast(pivots, mpi_size - 1, MPI_INT, 0, MPI_COMM_WORLD);
@@ -152,23 +151,39 @@ void *samplesort(int *arr, int n, int mpi_rank, int mpi_size, void *serialsort(i
 
         MPI_Gatherv(&local[class_start[i]], class_end[i], MPI_INT, recvb, pivot_lens, pivot_starts, MPI_INT, i, MPI_COMM_WORLD);
     }
-
     int sum = pivot_lens[mpi_size - 1] + pivot_starts[mpi_size - 1];
-
+    free(local);
+    local = calloc(sum, sizeof(int));
     multimerge(recvb, pivot_starts, pivot_lens, mpi_size, local, sum);
-
     MPI_Gather(&sum, 1, MPI_INT, all_lengths, 1, MPI_INT, 0, MPI_COMM_WORLD);
 
     if (mpi_rank == 0)
     {
         all_starts[0] = 0;
-        for (i = 0; i < mpi_size; i++)
+        for (i = 1; i < mpi_size; i++)
         {
             all_starts[i] = all_starts[i - 1] + all_lengths[i - 1];
         }
     }
 
     MPI_Gatherv(local, sum, MPI_INT, arr, all_lengths, all_starts, MPI_INT, 0, MPI_COMM_WORLD);
+
+    free(samples);
+    free(local);
+    free(pivots);
+    free(class_start);
+    free(class_end);
+    free(pivot_lens);
+    free(pivot_starts);
+    free(recvb);
+
+    if (mpi_rank == 0)
+    {
+        free(all_samples);
+        free(all_samples_merged);
+        free(all_lengths);
+        free(all_starts);
+    }
 }
 
 int main(int argc, char *argv[])
@@ -208,7 +223,7 @@ int main(int argc, char *argv[])
     }
 
     double start_cycles = GetTimeBase();
-    samplesort(arr, n, mpi_rank, mpi_size, (void *)&ssort);
+    samplesort(arr, n, mpi_rank, mpi_size, &ssort);
     double end_cycles = GetTimeBase();
 
     if (mpi_rank == 0)
@@ -226,6 +241,7 @@ int main(int argc, char *argv[])
 
         printf("%f\n", execution_time);
         fflush(stdout);
+        free(arr);
     }
 
     MPI_Barrier(MPI_COMM_WORLD);
