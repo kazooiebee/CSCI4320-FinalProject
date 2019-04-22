@@ -1,0 +1,189 @@
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Exceeded indirect limit 8192 (8192)
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Exceeded indirect limit 8192 (8192)
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Abort(1) on node 10: Internal error
+Exceeded indirect limit 8192 (8192)
+Abort(1) on node 18: Internal error
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Abort(1) on node 44: Internal error
+Exceeded indirect limit 8192 (8192)
+Abort(1) on node 52: Internal error
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Exceeded indirect limit 8192 (8192)
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Exceeded indirect limit 8192 (8192)
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Exceeded indirect limit 8192 (8192)
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Exceeded indirect limit 8192 (8192)
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Exceeded indirect limit 8192 (8192)
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Exceeded indirect limit 8192 (8192)
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Exceeded indirect limit 8192 (8192)
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Exceeded indirect limit 8192 (8192)
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Exceeded indirect limit 8192 (8192)
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Exceeded indirect limit 8192 (8192)
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Exceeded indirect limit 8192 (8192)
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Exceeded indirect limit 8192 (8192)
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Exceeded indirect limit 8192 (8192)
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Abort(1) on node 46: Internal error
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Abort(1) on node 50: Internal error
+Abort(1) on node 2: Internal error
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Abort(1) on node 62: Internal error
+Abort(1) on node 12: Internal error
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Abort(1) on node 26: Internal error
+Abort(1) on node 42: Internal error
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Abort(1) on node 20: Internal error
+Abort(1) on node 36: Internal error
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Abort(1) on node 24: Internal error
+Abort(1) on node 8: Internal error
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Abort(1) on node 53: Internal error
+Abort(1) on node 38: Internal error
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Abort(1) on node 19: Internal error
+Abort(1) on node 9: Internal error
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Abort(1) on node 54: Internal error
+Abort(1) on node 37: Internal error
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Abort(1) on node 25: Internal error
+Abort(1) on node 3: Internal error
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Abort(1) on node 63: Internal error
+Abort(1) on node 39: Internal error
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Abort(1) on node 27: Internal error
+Abort(1) on node 11: Internal error
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Abort(1) on node 55: Internal error
+Abort(1) on node 47: Internal error
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Abort(1) on node 17: Internal error
+Abort(1) on node 1: Internal error
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Abort(1) on node 61: Internal error
+Abort(1) on node 45: Internal error
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Abort(1) on node 16: Internal error
+Abort(1) on node 0: Internal error
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Abort(1) on node 60: Internal error
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
+Abort(1) on node 34: Internal error
+Abort(1) on node 30: Internal error
+Abort(1) on node 4: Internal error
+Abort(1) on node 58: Internal error
+Abort(1) on node 14: Internal error
+Abort(1) on node 28: Internal error
+Abort(1) on node 40: Internal error
+Abort(1) on node 56: Internal error
+Abort(1) on node 6: Internal error
+Abort(1) on node 22: Internal error
+Abort(1) on node 33: Internal error
+Abort(1) on node 49: Internal error
+Abort(1) on node 7: Internal error
+Abort(1) on node 29: Internal error
+Abort(1) on node 35: Internal error
+Abort(1) on node 57: Internal error
+Abort(1) on node 13: Internal error
+Abort(1) on node 21: Internal error
+Abort(1) on node 41: Internal error
+Abort(1) on node 59: Internal error
+Abort(1) on node 43: Internal error
+Abort(1) on node 23: Internal error
+Abort(1) on node 5: Internal error
+Abort(1) on node 32: Internal error
+Abort(1) on node 15: Internal error

@@ -118,7 +118,6 @@ void bitonicsort(int *arr, int n, int mpi_rank, int mpi_size)
         for (j = k >> 1; j > 0; j = j >> 1)
         {
             parallelbitonicMerge(arr, n, k, j, mpi_size, mpi_rank);
-            MPI_Barrier(MPI_COMM_WORLD);
         }
     }
 
