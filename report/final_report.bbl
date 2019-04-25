@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+
+\bibitem{samplesort}
+{\sc Frazer, W.~D., and McKellar, A.~C.}
+\newblock Samplesort: A sampling approach to minimal storage tree sorting.
+\newblock {\em J. ACM 17}, 3 (July 1970), 496--507.
+
+\bibitem{DBLP:journals/corr/abs-1808-10292}
+{\sc Gerbessiotis, A.~V.}
+\newblock A study of integer sorting on multicores.
+\newblock {\em CoRR abs/1808.10292\/} (2018).
+
+\bibitem{bitonic}
+{\sc Knuth, D.~E.}
+\newblock {\em The Art of Computer Programming Volume 3}.
+\newblock Pearson Ed, 1998.
+
+\end{thebibliography}

@@ -1,6 +1,1 @@
-Exceeded indirect limit 8192 (8192)
-Exceeded indirect limit 8192 (8192)
-Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
-Assertion failed in file /bgsys/source/srcV1R2M5.5689/comm/lib/dev/mpich2/src/util/mem/handlemem.c at line 205: *indirect_size < indirect_num_blocks
-Abort(1) on node 1: Internal error
-Abort(1) on node 0: Internal error
+59.046550

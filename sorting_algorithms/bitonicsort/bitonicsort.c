@@ -25,27 +25,32 @@ void parallelbitonicMerge(int *arr, int n, int k, int j, int mpi_size, int mpi_r
     MPI_Request req_next, req_prev, send_req_next, send_req_prev;
     MPI_Status stat;
     int global_idx;
+    int *prev_local = NULL, *next_local = NULL;
 
     for (i = 0; i < n / mpi_size; i++)
     {
         global_idx = i + n / mpi_size * mpi_rank;
         int ij = global_idx ^ j;
         int ij_rank = ij / (n / mpi_size);
-        int tmp;
         if (ij > global_idx)
         {
             if (ij_rank != mpi_rank)
             {
+                if (next_local == NULL)
+                {
+                    next_local = calloc(n / mpi_size, sizeof(int));
+                    MPI_Irecv(next_local, n / mpi_size, MPI_INT, ij_rank, 0, MPI_COMM_WORLD, &req_next);
+                    MPI_Isend(arr, n / mpi_size, MPI_INT, ij_rank, 0, MPI_COMM_WORLD, &send_req_next);
+                    MPI_Wait(&req_next, &stat);
+                    MPI_Wait(&send_req_next, &stat);
+                }
                 // send yourself to ij_rank, receive from ij_rank info you need
-                MPI_Irecv(&tmp, 1, MPI_INT, ij_rank, global_idx, MPI_COMM_WORLD, &req_next);
-                MPI_Isend(&(arr[i]), 1, MPI_INT, ij_rank, ij, MPI_COMM_WORLD, &send_req_next);
-                MPI_Wait(&req_next, &stat);
                 //printf("RANK %d: received %d from rank %d\n", mpi_rank, tmp, ij_rank);
 
-                if ((global_idx & k) == 0 && arr[i] > tmp)
-                    arr[i] = tmp;
-                if ((global_idx & k) != 0 && arr[i] < tmp)
-                    arr[i] = tmp;
+                if ((global_idx & k) == 0 && arr[i] > next_local[i])
+                    arr[i] = next_local[i];
+                if ((global_idx & k) != 0 && arr[i] < next_local[i])
+                    arr[i] = next_local[i];
             }
             else
             {
@@ -60,41 +65,28 @@ void parallelbitonicMerge(int *arr, int n, int k, int j, int mpi_size, int mpi_r
             // see if we need to compare from another rank.
             if (ij_rank != mpi_rank)
             {
-                MPI_Irecv(&tmp, 1, MPI_INT, ij_rank, global_idx, MPI_COMM_WORLD, &req_prev);
-                MPI_Isend(&(arr[i]), 1, MPI_INT, ij_rank, ij, MPI_COMM_WORLD, &send_req_prev);
-                MPI_Wait(&req_prev, &stat);
+                if (prev_local == NULL)
+                {
+                    prev_local = calloc(n / mpi_size, sizeof(int));
+                    MPI_Irecv(prev_local, n / mpi_size, MPI_INT, ij_rank, 0, MPI_COMM_WORLD, &req_prev);
+                    MPI_Isend(arr, n / mpi_size, MPI_INT, ij_rank, 0, MPI_COMM_WORLD, &send_req_prev);
+                    MPI_Wait(&req_prev, &stat);
+                    MPI_Wait(&send_req_prev, &stat);
+                }
                 //printf("RANK %d: received %d from rank %d\n", mpi_rank, tmp, ij_rank);
 
-                if ((ij & k) == 0 && arr[i] < tmp)
-                    arr[i] = tmp;
-                if ((ij & k) != 0 && arr[i] > tmp)
-                    arr[i] = tmp;
+                if ((ij & k) == 0 && arr[i] < prev_local[i])
+                    arr[i] = prev_local[i];
+                if ((ij & k) != 0 && arr[i] > prev_local[i])
+                    arr[i] = prev_local[i];
             }
         }
     }
-}
 
-void serialbitonicsort(int *arr, int n)
-{
-    int i, j, k;
-
-    for (k = 2; k <= n; k = 2 * k)
-    {
-        for (j = k >> 1; j > 0; j = j >> 1)
-        {
-            for (i = 0; i < n; i++)
-            {
-                int ij = i ^ j;
-                if (ij > i)
-                {
-                    if ((i & k) == 0 && arr[i] > arr[ij])
-                        swap(arr, i, ij);
-                    if ((i & k) != 0 && arr[i] < arr[ij])
-                        swap(arr, i, ij);
-                }
-            }
-        }
-    }
+    if (prev_local != NULL)
+        free(prev_local);
+    if (next_local != NULL)
+        free(next_local);
 }
 
 void bitonicsort(int *arr, int n, int mpi_rank, int mpi_size)
