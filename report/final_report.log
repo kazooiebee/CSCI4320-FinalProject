@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.22)  26 APR 2019 06:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.22)  26 APR 2019 14:11
 entering extended mode
 **./final_report.tex
 (final_report.tex
@@ -527,44 +527,44 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {C:/Users/ValkCoen/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 [2]
-<../results/images/bitonic_diagram.png, id=16, 306.14375pt x 181.67876pt>
+<../results/images/bitonic_diagram.png, id=17, 306.14375pt x 181.67876pt>
 File: ../results/images/bitonic_diagram.png Graphic file (type png)
 <use ../results/images/bitonic_diagram.png>
 Package pdftex.def Info: ../results/images/bitonic_diagram.png  used on input l
-ine 66.
+ine 70.
 (pdftex.def)             Requested size: 214.29915pt x 127.17424pt.
-<../results/images/bucket_scale.png, id=18, 181.1568pt x 108.8868pt>
+<../results/images/bucket_scale.png, id=19, 181.1568pt x 108.8868pt>
 File: ../results/images/bucket_scale.png Graphic file (type png)
 <use ../results/images/bucket_scale.png>
 Package pdftex.def Info: ../results/images/bucket_scale.png  used on input line
- 74.
+ 78.
 (pdftex.def)             Requested size: 235.50378pt x 141.55278pt.
 
-Overfull \hbox (5.62628pt too wide) in paragraph at lines 74--75
+Overfull \hbox (5.62628pt too wide) in paragraph at lines 78--79
  [] 
  []
 
-<../results/images/bucket_speedup.png, id=19, 181.1568pt x 108.8868pt>
+<../results/images/bucket_speedup.png, id=20, 181.1568pt x 108.8868pt>
 File: ../results/images/bucket_speedup.png Graphic file (type png)
 <use ../results/images/bucket_speedup.png>
 Package pdftex.def Info: ../results/images/bucket_speedup.png  used on input li
-ne 80.
+ne 84.
 (pdftex.def)             Requested size: 235.50378pt x 141.55278pt.
 
-Overfull \hbox (5.62628pt too wide) in paragraph at lines 80--81
+Overfull \hbox (5.62628pt too wide) in paragraph at lines 84--85
  [] 
  []
 
 [3 <../results/images/bitonic_diagram.png> <../results/images/bucket_scale.png>
- <../results/images/bucket_speedup.png>]
+]
 <../results/images/bitonic_scale.png, id=26, 181.1568pt x 108.8868pt>
 File: ../results/images/bitonic_scale.png Graphic file (type png)
 <use ../results/images/bitonic_scale.png>
 Package pdftex.def Info: ../results/images/bitonic_scale.png  used on input lin
-e 86.
+e 90.
 (pdftex.def)             Requested size: 235.50378pt x 141.55278pt.
 
-Overfull \hbox (5.62628pt too wide) in paragraph at lines 86--87
+Overfull \hbox (5.62628pt too wide) in paragraph at lines 90--91
  [] 
  []
 
@@ -572,10 +572,10 @@ Overfull \hbox (5.62628pt too wide) in paragraph at lines 86--87
 File: ../results/images/bitonic_speedup.png Graphic file (type png)
 <use ../results/images/bitonic_speedup.png>
 Package pdftex.def Info: ../results/images/bitonic_speedup.png  used on input l
-ine 92.
+ine 96.
 (pdftex.def)             Requested size: 235.50378pt x 141.55278pt.
 
-Overfull \hbox (5.62628pt too wide) in paragraph at lines 92--93
+Overfull \hbox (5.62628pt too wide) in paragraph at lines 96--97
  [] 
  []
 
@@ -583,10 +583,10 @@ Overfull \hbox (5.62628pt too wide) in paragraph at lines 92--93
 File: ../results/images/sample_scale.png Graphic file (type png)
 <use ../results/images/sample_scale.png>
 Package pdftex.def Info: ../results/images/sample_scale.png  used on input line
- 98.
+ 102.
 (pdftex.def)             Requested size: 235.50378pt x 141.55278pt.
 
-Overfull \hbox (5.62628pt too wide) in paragraph at lines 98--99
+Overfull \hbox (5.62628pt too wide) in paragraph at lines 102--103
  [] 
  []
 
@@ -594,34 +594,34 @@ Overfull \hbox (5.62628pt too wide) in paragraph at lines 98--99
 File: ../results/images/sample_speedup.png Graphic file (type png)
 <use ../results/images/sample_speedup.png>
 Package pdftex.def Info: ../results/images/sample_speedup.png  used on input li
-ne 104.
+ne 108.
 (pdftex.def)             Requested size: 235.50378pt x 141.55278pt.
 
-Overfull \hbox (5.62628pt too wide) in paragraph at lines 104--105
+Overfull \hbox (5.62628pt too wide) in paragraph at lines 108--109
  [] 
  []
 
-<../results/images/sample_growth.png, id=30, 180.9159pt x 108.8868pt>
+[4 <../results/images/bucket_speedup.png> <../results/images/bitonic_scale.png>
+ <../results/images/bitonic_speedup.png> <../results/images/sample_scale.png>]
+<../results/images/sample_growth.png, id=37, 180.9159pt x 108.8868pt>
 File: ../results/images/sample_growth.png Graphic file (type png)
 <use ../results/images/sample_growth.png>
 Package pdftex.def Info: ../results/images/sample_growth.png  used on input lin
-e 110.
+e 114.
 (pdftex.def)             Requested size: 235.19061pt x 141.55278pt.
 
-Overfull \hbox (5.31311pt too wide) in paragraph at lines 110--111
+Overfull \hbox (5.31311pt too wide) in paragraph at lines 114--115
  [] 
  []
 
-[4 <../results/images/bitonic_scale.png> <../results/images/bitonic_speedup.png
-> <../results/images/sample_scale.png> <../results/images/sample_speedup.png>]
 <../results/images/bitonic_growth.png, id=38, 181.1568pt x 108.8868pt>
 File: ../results/images/bitonic_growth.png Graphic file (type png)
 <use ../results/images/bitonic_growth.png>
 Package pdftex.def Info: ../results/images/bitonic_growth.png  used on input li
-ne 116.
+ne 120.
 (pdftex.def)             Requested size: 235.50378pt x 141.55278pt.
 
-Overfull \hbox (5.62628pt too wide) in paragraph at lines 116--117
+Overfull \hbox (5.62628pt too wide) in paragraph at lines 120--121
  [] 
  []
 
@@ -629,45 +629,47 @@ Overfull \hbox (5.62628pt too wide) in paragraph at lines 116--117
 File: ../results/images/bucket_growth.png Graphic file (type png)
 <use ../results/images/bucket_growth.png>
 Package pdftex.def Info: ../results/images/bucket_growth.png  used on input lin
-e 122.
+e 126.
 (pdftex.def)             Requested size: 235.50378pt x 141.55278pt.
 
-Overfull \hbox (5.62628pt too wide) in paragraph at lines 122--123
+Overfull \hbox (5.62628pt too wide) in paragraph at lines 126--127
  [] 
  []
 
 <../results/images/quick.png, id=40, 181.1568pt x 108.8868pt>
 File: ../results/images/quick.png Graphic file (type png)
 <use ../results/images/quick.png>
-Package pdftex.def Info: ../results/images/quick.png  used on input line 128.
+Package pdftex.def Info: ../results/images/quick.png  used on input line 132.
 (pdftex.def)             Requested size: 217.38705pt x 130.66347pt.
-[5 <../results/images/sample_growth.png> <../results/images/bitonic_growth.png>
- <../results/images/bucket_growth.png> <../results/images/quick.png>]
-(final_report.bbl) [6] (final_report.aux) ) 
+[5 <../results/images/sample_speedup.png> <../results/images/sample_growth.png>
+ <../results/images/bitonic_growth.png> <../results/images/bucket_growth.png> <
+../results/images/quick.png>] (final_report.bbl) [6] (final_report.aux) ) 
 Here is how much of TeX's memory you used:
- 12686 strings out of 492902
- 237229 string characters out of 3122405
- 419848 words of memory out of 3000000
- 16513 multiletter control sequences out of 15000+200000
- 536800 words of font info for 41 fonts, out of 3000000 for 9000
+ 12689 strings out of 492902
+ 237268 string characters out of 3122405
+ 428848 words of memory out of 3000000
+ 16515 multiletter control sequences out of 15000+200000
+ 536968 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,5n,63p,1495b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/ValkCoen/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ValkCoen/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/U
-sers/ValkCoen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmcsc10.pfb><C:/Users/ValkCoen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmmi10.pfb><C:/Users/ValkCoen/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ValkCoen/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ValkCoen/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Us
+<C:/Us
 ers/ValkCoen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mr7.pfb><C:/Users/ValkCoen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr9.pfb><C:/Users/ValkCoen/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on final_report.pdf (6 pages, 417995 bytes).
+mbx12.pfb><C:/Users/ValkCoen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmbx9.pfb><C:/Users/ValkCoen/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/ValkCoen/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ValkCoen/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Us
+ers/ValkCoen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mr12.pfb><C:/Users/ValkCoen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmr17.pfb><C:/Users/ValkCoen/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/ValkCoen/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/ValkCoen/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/V
+alkCoen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10
+.pfb>
+Output written on final_report.pdf (6 pages, 431760 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
+ 88 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
