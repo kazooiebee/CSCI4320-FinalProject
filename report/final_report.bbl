@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{DBLP:journals/corr/AxtmannWF017}
+{\sc Axtmann, M., Witt, S., Ferizovic, D., and Sanders, P.}
+\newblock In-place parallel super scalar samplesort (ipsssso).
+\newblock {\em CoRR abs/1705.02257\/} (2017).
+
 \bibitem{samplesort}
 {\sc Frazer, W.~D., and McKellar, A.~C.}
 \newblock Samplesort: A sampling approach to minimal storage tree sorting.
@@ -10,9 +15,29 @@
 \newblock A study of integer sorting on multicores.
 \newblock {\em CoRR abs/1808.10292\/} (2018).
 
-\bibitem{bitonic}
+\bibitem{10.1093/comjnl/5.1.10}
+{\sc Hoare, C. A.~R.}
+\newblock {Quicksort}.
+\newblock {\em The Computer Journal 5}, 1 (01 1962), 10--16.
+
+\bibitem{Knuth:1998:ACP:280635}
 {\sc Knuth, D.~E.}
-\newblock {\em The Art of Computer Programming Volume 3}.
-\newblock Pearson Ed, 1998.
+\newblock {\em The Art of Computer Programming, Volume 3: (2Nd Ed.) Sorting and
+  Searching}.
+\newblock Addison Wesley Longman Publishing Co., Inc., Redwood City, CA, USA,
+  1998.
+
+\bibitem{Pasetto:2011:CSP:2048147.2048207}
+{\sc Pasetto, D., and Akhriev, A.}
+\newblock A comparative study of parallel sort algorithms.
+\newblock In {\em Proceedings of the ACM International Conference Companion on
+  Object Oriented Programming Systems Languages and Applications Companion\/}
+  (New York, NY, USA, 2011), OOPSLA '11, ACM, pp.~203--204.
+
+\bibitem{10.1007/978-3-540-30140-0_69}
+{\sc Sanders, P., and Winkel, S.}
+\newblock Super scalar sample sort.
+\newblock In {\em Algorithms -- ESA 2004\/} (Berlin, Heidelberg, 2004),
+  S.~Albers and T.~Radzik, Eds., Springer Berlin Heidelberg, pp.~784--796.
 
 \end{thebibliography}

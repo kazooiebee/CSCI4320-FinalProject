@@ -34,11 +34,13 @@
  address = {New York, NY, USA},
 } 
 
-@Book{bitonic,
-title = {The Art of Computer Programming Volume 3},
-author = {Knuth, D. E.},
-publisher = {Pearson Ed},
-year = {1998},
+@book{Knuth:1998:ACP:280635,
+ author = {Knuth, Donald E.},
+ title = {The Art of Computer Programming,  Volume 3: (2Nd Ed.) Sorting and Searching},
+ year = {1998},
+ isbn = {0-201-89685-0},
+ publisher = {Addison Wesley Longman Publishing Co., Inc.},
+ address = {Redwood City, CA, USA},
 }
 
 @article{DBLP:journals/corr/abs-1808-10292,
@@ -54,3 +56,69 @@ year = {1998},
   biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1808-10292},
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
+
+@article{DBLP:journals/corr/AxtmannWF017,
+  author    = {Michael Axtmann and
+               Sascha Witt and
+               Daniel Ferizovic and
+               Peter Sanders},
+  title     = {In-place Parallel Super Scalar Samplesort (IPSSSSo)},
+  journal   = {CoRR},
+  volume    = {abs/1705.02257},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1705.02257},
+  archivePrefix = {arXiv},
+  eprint    = {1705.02257},
+  timestamp = {Mon, 13 Aug 2018 16:48:24 +0200},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/AxtmannWF017},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{10.1093/comjnl/5.1.10,
+    author = {Hoare, C. A. R.},
+    title = "{Quicksort}",
+    journal = {The Computer Journal},
+    volume = {5},
+    number = {1},
+    pages = {10-16},
+    year = {1962},
+    month = {01},
+    abstract = "{A description is given of a new method of sorting in the random-access store of a computer. The method compares very favourably with other known methods in speed, in economy of storage, and in ease of programming. Certain refinements of the method, which may be useful in the optimization of inner loops, are described in the second part of the paper.}",
+    issn = {0010-4620},
+    doi = {10.1093/comjnl/5.1.10},
+    url = {https://doi.org/10.1093/comjnl/5.1.10},
+    eprint = {http://oup.prod.sis.lan/comjnl/article-pdf/5/1/10/1111445/050010.pdf},
+}
+
+@InProceedings{10.1007/978-3-540-30140-0_69,
+author="Sanders, Peter
+and Winkel, Sebastian",
+editor="Albers, Susanne
+and Radzik, Tomasz",
+title="Super Scalar Sample Sort",
+booktitle="Algorithms -- ESA 2004",
+year="2004",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="784--796",
+abstract="Sample sort, a generalization of quicksort that partitions the input into many pieces, is known as the best practical comparison based sorting algorithm for distributed memory parallel computers. We show that sample sort is also useful on a single processor. The main algorithmic insight is that element comparisons can be decoupled from expensive conditional branching using predicated instructions. This transformation facilitates optimizations like loop unrolling and software pipelining. The final implementation, albeit cache efficient, is limited by a linear number of memory accesses rather than the {\$}{\backslash}mathcal{\{}O{\}}{\backslash}!{\backslash}left(n{\backslash}log n{\backslash}right){\$}comparisons. On an Itanium 2 machine, we obtain a speedup of up to 2 over std::sort from the GCC STL library, which is known as one of the fastest available quicksort implementations.",
+isbn="978-3-540-30140-0"
+}
+
+@inproceedings{Pasetto:2011:CSP:2048147.2048207,
+ author = {Pasetto, Davide and Akhriev, Albert},
+ title = {A Comparative Study of Parallel Sort Algorithms},
+ booktitle = {Proceedings of the ACM International Conference Companion on Object Oriented Programming Systems Languages and Applications Companion},
+ series = {OOPSLA '11},
+ year = {2011},
+ isbn = {978-1-4503-0942-4},
+ location = {Portland, Oregon, USA},
+ pages = {203--204},
+ numpages = {2},
+ url = {http://doi.acm.org/10.1145/2048147.2048207},
+ doi = {10.1145/2048147.2048207},
+ acmid = {2048207},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {parallel sorting, scalability, sorting throughput},
+} 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.22)  24 APR 2019 21:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.22)  26 APR 2019 06:56
 entering extended mode
 **./final_report.tex
 (final_report.tex
@@ -512,13 +512,13 @@ G,.JBIG2,.JB2,.eps]
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 33.
+LaTeX Font Info:    Try loading font information for U+msa on input line 34.
 
 ("C:\Users\ValkCoen\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.f
 d"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 33.
+LaTeX Font Info:    Try loading font information for U+msb on input line 34.
 
 ("C:\Users\ValkCoen\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.f
 d"
@@ -526,86 +526,148 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {C:/Users/ValkCoen/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<../results/images/bucketsort_1048576.png, id=12, 180.9159pt x 108.8868pt>
-File: ../results/images/bucketsort_1048576.png Graphic file (type png)
-<use ../results/images/bucketsort_1048576.png>
-Package pdftex.def Info: ../results/images/bucketsort_1048576.png  used on inpu
-t line 58.
-(pdftex.def)             Requested size: 180.91544pt x 108.8865pt.
-<../results/images/bitonicsort_33554432.png, id=14, 180.9159pt x 108.8868pt>
-File: ../results/images/bitonicsort_33554432.png Graphic file (type png)
-<use ../results/images/bitonicsort_33554432.png>
-Package pdftex.def Info: ../results/images/bitonicsort_33554432.png  used on in
-put line 64.
-(pdftex.def)             Requested size: 180.91544pt x 108.8865pt.
-<../results/images/bitonicsort_33554432_log.png, id=15, 180.9159pt x 108.8868pt
->
-File: ../results/images/bitonicsort_33554432_log.png Graphic file (type png)
-<use ../results/images/bitonicsort_33554432_log.png>
-Package pdftex.def Info: ../results/images/bitonicsort_33554432_log.png  used o
-n input line 68.
-(pdftex.def)             Requested size: 180.91544pt x 108.8865pt.
-<../results/images/samplesort_33554432.png, id=16, 181.1568pt x 108.8868pt>
-File: ../results/images/samplesort_33554432.png Graphic file (type png)
-<use ../results/images/samplesort_33554432.png>
-Package pdftex.def Info: ../results/images/samplesort_33554432.png  used on inp
-ut line 74.
-(pdftex.def)             Requested size: 181.15634pt x 108.8865pt.
+[2]
+<../results/images/bitonic_diagram.png, id=16, 306.14375pt x 181.67876pt>
+File: ../results/images/bitonic_diagram.png Graphic file (type png)
+<use ../results/images/bitonic_diagram.png>
+Package pdftex.def Info: ../results/images/bitonic_diagram.png  used on input l
+ine 66.
+(pdftex.def)             Requested size: 214.29915pt x 127.17424pt.
+<../results/images/bucket_scale.png, id=18, 181.1568pt x 108.8868pt>
+File: ../results/images/bucket_scale.png Graphic file (type png)
+<use ../results/images/bucket_scale.png>
+Package pdftex.def Info: ../results/images/bucket_scale.png  used on input line
+ 74.
+(pdftex.def)             Requested size: 235.50378pt x 141.55278pt.
 
-[2 <../results/images/bucketsort_1048576.png> <../results/images/bitonicsort_33
-554432.png> <../results/images/bitonicsort_33554432_log.png> <../results/images
-/samplesort_33554432.png>]
-<../results/images/samplesort_512.png, id=24, 181.1568pt x 108.8868pt>
-File: ../results/images/samplesort_512.png Graphic file (type png)
-<use ../results/images/samplesort_512.png>
-Package pdftex.def Info: ../results/images/samplesort_512.png  used on input li
+Overfull \hbox (5.62628pt too wide) in paragraph at lines 74--75
+ [] 
+ []
+
+<../results/images/bucket_speedup.png, id=19, 181.1568pt x 108.8868pt>
+File: ../results/images/bucket_speedup.png Graphic file (type png)
+<use ../results/images/bucket_speedup.png>
+Package pdftex.def Info: ../results/images/bucket_speedup.png  used on input li
 ne 80.
-(pdftex.def)             Requested size: 181.15634pt x 108.8865pt.
-<../results/images/samplesort_2048.png, id=25, 181.1568pt x 108.8868pt>
-File: ../results/images/samplesort_2048.png Graphic file (type png)
-<use ../results/images/samplesort_2048.png>
-Package pdftex.def Info: ../results/images/samplesort_2048.png  used on input l
-ine 84.
-(pdftex.def)             Requested size: 181.15634pt x 108.8865pt.
-<../results/images/bitonicsort_64.png, id=26, 181.1568pt x 108.8868pt>
-File: ../results/images/bitonicsort_64.png Graphic file (type png)
-<use ../results/images/bitonicsort_64.png>
-Package pdftex.def Info: ../results/images/bitonicsort_64.png  used on input li
-ne 90.
-(pdftex.def)             Requested size: 181.15634pt x 108.8865pt.
-<../results/images/bucketsort_512.png, id=27, 181.1568pt x 108.8868pt>
-File: ../results/images/bucketsort_512.png Graphic file (type png)
-<use ../results/images/bucketsort_512.png>
-Package pdftex.def Info: ../results/images/bucketsort_512.png  used on input li
-ne 96.
-(pdftex.def)             Requested size: 181.15634pt x 108.8865pt.
- (final_report.bbl [3 <../results/images/samplesort_512.png> <../results/images
-/samplesort_2048.png> <../results/images/bitonicsort_64.png> <../results/images
-/bucketsort_512.png>]) [4] (final_report.aux) ) 
+(pdftex.def)             Requested size: 235.50378pt x 141.55278pt.
+
+Overfull \hbox (5.62628pt too wide) in paragraph at lines 80--81
+ [] 
+ []
+
+[3 <../results/images/bitonic_diagram.png> <../results/images/bucket_scale.png>
+ <../results/images/bucket_speedup.png>]
+<../results/images/bitonic_scale.png, id=26, 181.1568pt x 108.8868pt>
+File: ../results/images/bitonic_scale.png Graphic file (type png)
+<use ../results/images/bitonic_scale.png>
+Package pdftex.def Info: ../results/images/bitonic_scale.png  used on input lin
+e 86.
+(pdftex.def)             Requested size: 235.50378pt x 141.55278pt.
+
+Overfull \hbox (5.62628pt too wide) in paragraph at lines 86--87
+ [] 
+ []
+
+<../results/images/bitonic_speedup.png, id=27, 181.1568pt x 108.8868pt>
+File: ../results/images/bitonic_speedup.png Graphic file (type png)
+<use ../results/images/bitonic_speedup.png>
+Package pdftex.def Info: ../results/images/bitonic_speedup.png  used on input l
+ine 92.
+(pdftex.def)             Requested size: 235.50378pt x 141.55278pt.
+
+Overfull \hbox (5.62628pt too wide) in paragraph at lines 92--93
+ [] 
+ []
+
+<../results/images/sample_scale.png, id=28, 181.1568pt x 108.8868pt>
+File: ../results/images/sample_scale.png Graphic file (type png)
+<use ../results/images/sample_scale.png>
+Package pdftex.def Info: ../results/images/sample_scale.png  used on input line
+ 98.
+(pdftex.def)             Requested size: 235.50378pt x 141.55278pt.
+
+Overfull \hbox (5.62628pt too wide) in paragraph at lines 98--99
+ [] 
+ []
+
+<../results/images/sample_speedup.png, id=29, 181.1568pt x 108.8868pt>
+File: ../results/images/sample_speedup.png Graphic file (type png)
+<use ../results/images/sample_speedup.png>
+Package pdftex.def Info: ../results/images/sample_speedup.png  used on input li
+ne 104.
+(pdftex.def)             Requested size: 235.50378pt x 141.55278pt.
+
+Overfull \hbox (5.62628pt too wide) in paragraph at lines 104--105
+ [] 
+ []
+
+<../results/images/sample_growth.png, id=30, 180.9159pt x 108.8868pt>
+File: ../results/images/sample_growth.png Graphic file (type png)
+<use ../results/images/sample_growth.png>
+Package pdftex.def Info: ../results/images/sample_growth.png  used on input lin
+e 110.
+(pdftex.def)             Requested size: 235.19061pt x 141.55278pt.
+
+Overfull \hbox (5.31311pt too wide) in paragraph at lines 110--111
+ [] 
+ []
+
+[4 <../results/images/bitonic_scale.png> <../results/images/bitonic_speedup.png
+> <../results/images/sample_scale.png> <../results/images/sample_speedup.png>]
+<../results/images/bitonic_growth.png, id=38, 181.1568pt x 108.8868pt>
+File: ../results/images/bitonic_growth.png Graphic file (type png)
+<use ../results/images/bitonic_growth.png>
+Package pdftex.def Info: ../results/images/bitonic_growth.png  used on input li
+ne 116.
+(pdftex.def)             Requested size: 235.50378pt x 141.55278pt.
+
+Overfull \hbox (5.62628pt too wide) in paragraph at lines 116--117
+ [] 
+ []
+
+<../results/images/bucket_growth.png, id=39, 181.1568pt x 108.8868pt>
+File: ../results/images/bucket_growth.png Graphic file (type png)
+<use ../results/images/bucket_growth.png>
+Package pdftex.def Info: ../results/images/bucket_growth.png  used on input lin
+e 122.
+(pdftex.def)             Requested size: 235.50378pt x 141.55278pt.
+
+Overfull \hbox (5.62628pt too wide) in paragraph at lines 122--123
+ [] 
+ []
+
+<../results/images/quick.png, id=40, 181.1568pt x 108.8868pt>
+File: ../results/images/quick.png Graphic file (type png)
+<use ../results/images/quick.png>
+Package pdftex.def Info: ../results/images/quick.png  used on input line 128.
+(pdftex.def)             Requested size: 217.38705pt x 130.66347pt.
+[5 <../results/images/sample_growth.png> <../results/images/bitonic_growth.png>
+ <../results/images/bucket_growth.png> <../results/images/quick.png>]
+(final_report.bbl) [6] (final_report.aux) ) 
 Here is how much of TeX's memory you used:
- 12667 strings out of 492902
- 236752 string characters out of 3122405
- 416848 words of memory out of 3000000
- 16497 multiletter control sequences out of 15000+200000
+ 12686 strings out of 492902
+ 237229 string characters out of 3122405
+ 419848 words of memory out of 3000000
+ 16513 multiletter control sequences out of 15000+200000
  536800 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,5n,63p,834b,346s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/ValkCoen/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ValkCo
-en/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
-C:/Users/ValkCoen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmcsc10.pfb><C:/Users/ValkCoen/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ValkCoen/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ValkCoen/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ValkCoe
-n/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C
-:/Users/ValkCoen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr7.pfb><C:/Users/ValkCoen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmr9.pfb><C:/Users/ValkCoen/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on final_report.pdf (4 pages, 250334 bytes).
+ 41i,5n,63p,1495b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/ValkCoen/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ValkCoen/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/U
+sers/ValkCoen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmcsc10.pfb><C:/Users/ValkCoen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmmi10.pfb><C:/Users/ValkCoen/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ValkCoen/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ValkCoen/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Us
+ers/ValkCoen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mr7.pfb><C:/Users/ValkCoen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr9.pfb><C:/Users/ValkCoen/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on final_report.pdf (6 pages, 417995 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
+ 84 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
