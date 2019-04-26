@@ -12,6 +12,10 @@
 
 double processor_frequency = 1600000000.0;
 
+/*
+bucketsort implementation. root sends elements to the proper ranks, which are threated like buckets.
+at the end, let ranks know that array is finished, gather results back to root and repeat process.
+*/
 void bucketsort(int *arr, int n, int mpi_rank, int mpi_size)
 {
     unsigned long long int div = 1;
@@ -28,7 +32,7 @@ void bucketsort(int *arr, int n, int mpi_rank, int mpi_size)
         lens = calloc(mpi_size, sizeof(int));
         starts = calloc(mpi_size, sizeof(int));
 
-        max = arr[0];
+        max = arr[0]; // max element determines how often we iterate this process
         for (i = 1; i < n; i++)
         {
             if (arr[i] > max)
@@ -47,7 +51,7 @@ void bucketsort(int *arr, int n, int mpi_rank, int mpi_size)
             }
 
             for (i = 0; i < n; i++)
-            {
+            { // first create lengths of buckets, to remain within memory constraings.
                 idx = (arr[i] / div) % mpi_size;
                 lens[idx]++;
             }
@@ -58,55 +62,56 @@ void bucketsort(int *arr, int n, int mpi_rank, int mpi_size)
                 starts[i] = starts[i - 1] + lens[i - 1];
             }
 
+            // scatter lengths to other ranks so they can allocate memory.
             MPI_Scatter(lens, 1, MPI_INT, &local_len, 1, MPI_INT, 0, MPI_COMM_WORLD);
 
             if (local != NULL)
             {
-                free(local);
+                free(local); // reset local from previous use
             }
 
             if (local_len != 0)
-            {
+            { // initialize the proper amount of memory.
                 local = calloc(local_len, sizeof(int));
             }
             else
-            {
+            { // if len is 0, we don't need this rank...
                 local = NULL;
             }
 
             for (i = 0; i < n; i++)
             {
-                idx = (arr[i] / div) % mpi_size;
+                idx = (arr[i] / div) % mpi_size; // which bucket to put element in
 
                 if (idx == 0)
-                {
+                { // this rank bucket
                     local[s] = arr[i];
                     s++;
                 }
                 else
-                {
+                { // send to other rank bucket
                     MPI_Send(&(arr[i]), 1, MPI_INT, idx, 0, MPI_COMM_WORLD);
                 }
             }
 
             for (i = 1; i < mpi_size; i++)
-            {
+            { // tell ranks we are finished.
                 MPI_Send(arr, 0, MPI_INT, i, 0, MPI_COMM_WORLD);
             }
 
-            MPI_Gatherv(local, local_len, MPI_INT, arr, lens, starts, MPI_INT, 0, MPI_COMM_WORLD);
+            MPI_Gatherv(local, local_len, MPI_INT, arr, lens, starts, MPI_INT, 0, MPI_COMM_WORLD); // gather from all buckets.
             div *= mpi_size;
         }
 
-        MPI_Scatter(lens, 1, MPI_INT, &local_len, 1, MPI_INT, 0, MPI_COMM_WORLD);
+        MPI_Scatter(lens, 1, MPI_INT, &local_len, 1, MPI_INT, 0, MPI_COMM_WORLD); // scatter lengths one last time.
 
         for (i = 1; i < mpi_size; i++)
-        {
+        { // tell ranks we are completely finished
             MPI_Send(arr, 2, MPI_INT, i, 0, MPI_COMM_WORLD);
         }
 
         if (local != NULL)
-        {
+        { // free only if necessary
             free(local);
         }
         free(lens);
@@ -116,9 +121,9 @@ void bucketsort(int *arr, int n, int mpi_rank, int mpi_size)
     {
         while (1)
         {
-            MPI_Scatter(NULL, 1, MPI_INT, &local_len, 1, MPI_INT, 0, MPI_COMM_WORLD);
+            MPI_Scatter(NULL, 1, MPI_INT, &local_len, 1, MPI_INT, 0, MPI_COMM_WORLD); // receive length from root.
             if (local != NULL)
-            {
+            { // free previous local
                 free(local);
             }
 
@@ -136,12 +141,12 @@ void bucketsort(int *arr, int n, int mpi_rank, int mpi_size)
             while (1)
             {
                 MPI_Status stat;
-                MPI_Probe(0, 0, MPI_COMM_WORLD, &stat);
+                MPI_Probe(0, 0, MPI_COMM_WORLD, &stat); // check size of message
                 MPI_Get_count(&stat, MPI_INT, &size);
                 MPI_Recv(buffer, size, MPI_INT, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
                 if (size == 0)
-                {
+                { // done with one iteration, gather results.
                     // gather results and repeat process.
                     // first gather sizes
                     MPI_Gatherv(local, local_len, MPI_INT, NULL, NULL, NULL, MPI_INT, 0, MPI_COMM_WORLD);
@@ -193,7 +198,7 @@ int main(int argc, char *argv[])
     }
 
     if (mpi_rank == 0)
-    {
+    { // array is initialized as random positive integers.
         arr = calloc(n, sizeof(int));
         for (i = 0; i < n; i++)
         {
@@ -202,7 +207,7 @@ int main(int argc, char *argv[])
     }
 
     double start_cycles = GetTimeBase();
-    bucketsort(arr, n, mpi_rank, mpi_size);
+    bucketsort(arr, n, mpi_rank, mpi_size); // perform sort
     double end_cycles = GetTimeBase();
 
     MPI_Barrier(MPI_COMM_WORLD);
@@ -215,7 +220,7 @@ int main(int argc, char *argv[])
             // printf("%d\n", arr[i]);
             if (arr[i - 1] > arr[i])
             {
-                fprintf(stderr, "%d, %d\n", arr[i - 1], arr[i]);
+                fprintf(stderr, "%d, %d\n", arr[i - 1], arr[i]); // show out of place elements (should not print anything out)
             }
         }
 

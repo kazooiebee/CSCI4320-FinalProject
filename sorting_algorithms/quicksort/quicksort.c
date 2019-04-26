@@ -1,4 +1,4 @@
-// #include <mpi.h>
+#include <mpi.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
@@ -10,39 +10,24 @@
 #define GetTimeBase MPI_Wtime
 #endif
 
-long long int long_long_int_random()
-{
-    long long int R = 0;
-    int times = sizeof(long long int) / sizeof(int);
-    int i;
-    for (i = 0; i < times; i++)
-    {
-        R = (R << 32) | (long long int)rand();
-    }
-
-    return R;
-}
-
 double processor_frequency = 1600000000.0;
-// A utility function to swap two elements
-void swap(long long int *a, long long int *b)
+// Simple function to swap elements.
+void swap(int *a, int *b)
 {
-    long long int t = *a;
+    int t = *a;
     *a = *b;
     *b = t;
 }
 
-/* This function takes last element as pivot, places 
-   the pivot element at its correct position in sorted 
-    array, and places all smaller (smaller than pivot) 
-   to left of pivot and all greater elements to right 
-   of pivot */
-long long int partition(long long int arr[], long long int low, long long int high)
+/* 
+Parition array into elements above and elements below pivot.
+ */
+int partition(int *arr, int low, int high)
 {
-    long long int pivot = arr[high]; // pivot
-    long long int i = (low - 1);     // Index of smaller element
+    int pivot = arr[high]; // pivot
+    int i = (low - 1);     // Index of smaller element
 
-    for (long long int j = low; j <= high - 1; j++)
+    for (int j = low; j <= high - 1; j++)
     {
         // If current element is smaller than or
         // equal to pivot
@@ -56,52 +41,53 @@ long long int partition(long long int arr[], long long int low, long long int hi
     return (i + 1);
 }
 
-/* The main function that implements QuickSort 
- arr[] --> Array to be sorted, 
-  low  --> Starting index, 
-  high  --> Ending index */
-void quickSort(long long int arr[], long long int low, long long int high)
+/* 
+quicksort partitions array into 2 parts pased on the pivot (high in this case)
+then performs quicksort on the two smaller partitioned arrays.
+*/
+void quickSort(int *arr, int low, int high)
 {
     if (low < high)
     {
-        /* pi is partitioning index, arr[p] is now 
-           at right place */
-        long long int pi = partition(arr, low, high);
+        // partition array
+        int part = partition(arr, low, high);
 
-        // Separately sort elements before
-        // partition and after partition
-        quickSort(arr, low, pi - 1);
-        quickSort(arr, pi + 1, high);
+        quickSort(arr, low, part - 1);
+        quickSort(arr, part + 1, high);
     }
 }
 
 int main(int argc, char *argv[])
 {
+
+    MPI_Init(&argc, &argv);
     int i;
-    long long int n = 100000;
-    long long int *arr;
+    int n = 100000;
+    int *arr;
 
     if (argc >= 2)
     {
         n = atoi(argv[1]);
     }
-    arr = calloc(n, sizeof(long long int));
+    arr = calloc(n, sizeof(int));
 
     printf("Initializing...\n");
     for (i = 0; i < n; i++)
-    {
-        arr[i] = long_long_int_random();
+    { // initialize an array of random positive integers
+        arr[i] = rand();
     }
     printf("Done initializing.\n");
 
     printf("Sorting...\n");
-    quickSort(arr, 0, n - 1);
+    double start_cycles = GetTimeBase();
+    quickSort(arr, 0, n - 1); // perform sort
+    double end_cycles = GetTimeBase();
     printf("Done sorting.\n");
 
-    for (i = 0; i < n; i++)
-    {
-        printf("%llu\n", arr[i]);
-    }
+    double execution_time = ((double)(end_cycles - start_cycles)) /
+                            processor_frequency;
+
+    printf("%f\n", execution_time);
 
     free(arr);
 }
